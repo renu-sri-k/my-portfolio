@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project 3 - Simple Counter</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            margin-top: 100px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Simple Counter App</h1>
+
+<h2 id="count">0</h2>
+
+<button onclick="increase()">+</button>
+<button onclick="decrease()">-</button>
+
+<script>
+    let count = 0;
+
+    function increase() {
+        count++;
+        document.getElementById("count").innerText = count;
+    }
+
+    function decrease() {
+        count--;
+        document.getElementById("count").innerText = count;
+    }
+</script>
+
+</body>
+</html>
