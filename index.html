@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Renu Sri Portfolio</title>
+
+<style>
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  scroll-behavior: smooth;
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+  background: #f8c8d8;
+}
+
+nav {
+  background: black;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #f8c8d8;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+section {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  margin: 20px 0;
+  border: 3px solid black;
+}
+
+.skills-box {
+  display: flex;
+  justify-content: center;
+}
+
+.skills-box ul {
+  text-align: left;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.project-card {
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #eee;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  background: black;
+  color: white;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: black;
+  color: white;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #f8c8d8;
+  color: black;
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+}
+
+.fade:nth-child(1) { animation-delay: 0.3s; }
+.fade:nth-child(2) { animation-delay: 0.6s; }
+.fade:nth-child(3) { animation-delay: 0.9s; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+@media (max-width: 768px) {
+
+  .container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .profile-img {
+    width: 120px;
+  }
+
+}
+form input, form textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px;
+}
+.project-card {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.project-card:hover {
+  color: white;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Renu Sri K</h1>
+  <p>Web Developer (Beginner)</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+<section id="home" class="fade">
+  <h2>Welcome to My Page</h2>
+  <img src="My photo.png.png" class="profile-img">
+  <p>Here I practice and improve my web development skills step by step.</p>
+</section>
+
+<section id="skills" class="fade">
+  <h2>My Skills</h2>
+  <div class="skills-box">
+    <ul>
+      <li>HTML (Basic)</li>
+      <li>Learning CSS</li>
+      <li>Learning JavaScript</li>
+      <li>Good Communication</li>
+      <li>Basic Python</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects" class="fade">
+ 
+</section>
+
+<section id="about" class="fade">
+  <h2>About Me</h2>
+  <p>I am a student starting my journey in web development.</p>
+  <p>I practice daily to improve my skills.</p>
+</section>
+    <div class="projects">
+  <h2>My Projects</h2>
+
+  <a href="todo.html">
+    <button>Project 1</button>
+</a>
+
+<a href="calculator.html">
+    <button>Project 2</button>
+</a>
+  <button onclick="alert('Project coming soon!')">Project 3</button>
+</div>
+<section id="contact" class="fade">
+  <h2>Contact</h2>
+  <p>Email: renu.sri.in@gmail.com</p>
+  <p>Phone: +91 9677439395</p>
+<a href="mailto:renu.sri.in@gmail.com?subject=Portfolio Contact&body=Hello Renu,">
+    <button>Send Email</button>
+</a>
+</section>
+
+<section id="projects" class="fade">
+  <h2>My Projects</h2>
+
+<div class="projects">
+
+  <a href="todo.html" class="project-card">To-Do App</a>
+  <a href="calculator.html" class="project-card">Calculator</a>
+
+</div>
+</section>
+
+</div>
+
+</body>
+</html>
