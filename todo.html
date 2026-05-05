@@ -55,7 +55,7 @@
 <script>
 function addTask() {
     let input = document.getElementById("taskInput");
-    let task = input.value;
+    let task = input.value.trim();
 
     if (task === "") return;
 
@@ -67,6 +67,15 @@ function addTask() {
 
     input.value = "";
 }
+    
+let input = document.getElementById("taskInput");
+
+input.addEventListener("keypress", function(e) {
+    if (e.key === "Enter") {
+        addTask();
+    }
+});
+    
 </script>
 
 </body>
