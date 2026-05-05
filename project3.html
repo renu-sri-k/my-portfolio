@@ -23,6 +23,7 @@
 
 <button onclick="increase()">+</button>
 <button onclick="decrease()">-</button>
+<button onclick="reset()">Reset</button>
 
 <script>
     let count = 0;
@@ -33,9 +34,21 @@
     }
 
     function decrease() {
+        if(count>0) {
         count--;
         document.getElementById("count").innerText = count;
     }
+}
+
+    function reset() {
+        count=0;
+        document.getElementById("count").innerText=count;
+}
+
+    if (count>0) {
+        document.getElementById("count").style.color="green";
+}
+
 </script>
 
 </body>
